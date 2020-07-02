@@ -1,0 +1,3183 @@
+{
+	"info": {
+		"_postman_id": "4228f79c-88c5-4f43-9540-d0a2e35dacf2",
+		"name": "Delilah",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Admin Add Platos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMyIsImlhdCI6MTU5MjQ4MDE5N30.-FrmZevvrRDfpvMdFS8TNv-HeLl9jJJRW3Xm9qWYWbM",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"platoTitle\":\"cazon\",\"platoPrice\":\"345435\"}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtplatos/add",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtplatos",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin Add Platos, OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMyIsImlhdCI6MTU5MjQ4MDE5N30.-FrmZevvrRDfpvMdFS8TNv-HeLl9jJJRW3Xm9qWYWbM",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"platoTitle\":\"arroz\",\"platoPrice\":\"423423\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtplatos/add",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtplatos",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-syeTd+ugZkS0mM7bs1Hdijc22YE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 14:01:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"platoTitle\": \"arroz\",\n    \"platoPrice\": \"423423\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin update plato",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"platoPrice\": \"4400\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtPlatos/update/arroz",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtPlatos",
+						"update",
+						"arroz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin update plato, OK",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"platoPrice\": \"234\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtPlatos/update/arroz",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtPlatos",
+								"update",
+								"arroz"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-NObgvR9Dt1hlhKTueCpr5LZpALg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:36:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"platoTitle\": {\n        \"platoTitle\": \"arroz\"\n    },\n    \"platoPriceç\": {\n        \"platoPrice\": \"234\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin Search all platos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtplatos/search",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtplatos",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin Search all platos, ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtplatos/search",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtplatos",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "133"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"85-OWPcYFFa9ue6/zEKvjs7xOXWLzk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 14:02:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platoTitle\": \"cazon\",\n        \"platoPrice\": 345435\n    },\n    {\n        \"platoTitle\": \"arroz\",\n        \"platoPrice\": 423423\n    },\n    {\n        \"platoTitle\": \"platano\",\n        \"platoPrice\": 2345340\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin Search platoId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtplatos/search/arroz",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtplatos",
+						"search",
+						"arroz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin Search platoId arroz",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtplatos/search/arroz",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtplatos",
+								"search",
+								"arroz"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "42"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2a-l4xOdCA2nH3aUgqDjnJaSTbWNdM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 14:02:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"platoTitle\": \"arroz\",\n    \"platoPrice\": 423423\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin remove platoId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtplatos/rmv/arroz",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtplatos",
+						"rmv",
+						"arroz"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin remove platoId, ok",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE2NjU5NDd9.KIoIGj41y1i_LIET21sXNO2CRibvtnpQeUmuJUb-F8s",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtplatos/rmv/arroz",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtplatos",
+								"rmv",
+								"arroz"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1-NWoZK3kTsExUV00Ywo1G5jlUKKs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 14:04:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "1"
+				}
+			]
+		},
+		{
+			"name": "User search platos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImlhdCI6MTU5MzQzODk5Nn0.wlld6ug9ZIcS7zQBhYkFSeF4Llg84GW09HQ1_m8vMVc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lOCIsImlhdCI6MTU5MjE3MDM0MX0.0I3pThKe_vnY4aBsO8eKRtlTEQDhupum4PqbJwfEAdM",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/user/search",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User search platos, ok",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lOCIsImlhdCI6MTU5MjE3MDM0MX0.0I3pThKe_vnY4aBsO8eKRtlTEQDhupum4PqbJwfEAdM",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/user/search",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "90"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5a-6GQ7pqMBrbsX9mtf54hVBnuqsBg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 14:04:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platoTitle\": \"cazon\",\n        \"platoPrice\": 345435\n    },\n    {\n        \"platoTitle\": \"platano\",\n        \"platoPrice\": 2345340\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin add user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"username4\",\"name\":\"name4\",\"email\":\"email4@gmail.com\",\"mobile\":\"1234567894\",\"address\":\"address4\",\"passwordHash\":\"a3SDsdf48\", \"admin\": \"1\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtUser/add",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtUser",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin add user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"username4\",\"name\":\"name4\",\"email\":\"email4@gmail.com\",\"mobile\":\"1234567894\",\"address\":\"address4\",\"passwordHash\":\"a3SDsdf48\", \"admin\": \"1\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/add",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"94-T+JIkQUBkCbgeZC5nnxuwmh2LfU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:49:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"username4\",\n    \"name\": \"name4\",\n    \"email\": \"email4@gmail.com\",\n    \"mobile\": \"1234567894\",\n    \"address\": \"address4\",\n    \"passwordHash\": \"a3SDsdf48\",\n    \"admin\": \"1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin update user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"passwordHash\": \"sdf45ASF\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtUser/update/username2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtUser",
+						"update",
+						"username2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin update user, weak password",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"passwordHash\": \"dfg354AS\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/update/username2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"update",
+								"username2"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11-EjFspRttr5LZ7YwU9ZN/yiVNpNc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:52:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Error en password"
+				},
+				{
+					"name": "Admin update user, change accepted",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"passwordHash\": \"sdf45ASF\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/update/username2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"update",
+								"username2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3-9imuRLez3P7URNNj5ibt9BHsaag\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:53:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    1\n]"
+				},
+				{
+					"name": "Admin update user, weak password",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"passwordHash\": \"123456789\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/update/username2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"update",
+								"username2"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "17"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"11-EjFspRttr5LZ7YwU9ZN/yiVNpNc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:52:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Error en password"
+				},
+				{
+					"name": "Admin update user, OK",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"passwordHash\": \"sdf45ASF\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/update/username7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"update",
+								"username7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "38"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"26-l35rZVnIb+AkPZc4afwp/s4Z+jk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:51:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"change\": {\n        \"passwordHash\": \"sdf45ASF\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin search user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtUser/search",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtUser",
+						"search"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin search user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/search",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "589"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"24d-h477qUUJA/ZzydXjqdU1sc0bdtI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:50:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"username\": \"username1\",\n        \"name\": \"name1\",\n        \"email\": \"email1@gmail.com\",\n        \"mobile\": \"1234567891\",\n        \"address\": \"address1\",\n        \"passwordHash\": \"a3SDsdf45\",\n        \"admin\": 1\n    },\n    {\n        \"username\": \"username2\",\n        \"name\": \"name2\",\n        \"email\": \"email2@gmail.com\",\n        \"mobile\": \"1234567892\",\n        \"address\": \"address2\",\n        \"passwordHash\": \"a3SDsdf46\",\n        \"admin\": 0\n    },\n    {\n        \"username\": \"username3\",\n        \"name\": \"name3\",\n        \"email\": \"email3@gmail.com\",\n        \"mobile\": \"1234567893\",\n        \"address\": \"address3\",\n        \"passwordHash\": \"a3SDsdf47\",\n        \"admin\": 0\n    },\n    {\n        \"username\": \"username4\",\n        \"name\": \"name4\",\n        \"email\": \"email4@gmail.com\",\n        \"mobile\": \"1234567894\",\n        \"address\": \"address4\",\n        \"passwordHash\": \"a3SDsdf48\",\n        \"admin\": 1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin search userId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtUser/search/username1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtUser",
+						"search",
+						"username1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin search userId",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/search/username1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"search",
+								"username1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "146"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"92-ZbL1b1TqY1yo1x3zBvNd0qN1Ajo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:50:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"username1\",\n    \"name\": \"name1\",\n    \"email\": \"email1@gmail.com\",\n    \"mobile\": \"1234567891\",\n    \"address\": \"address1\",\n    \"passwordHash\": \"a3SDsdf45\",\n    \"admin\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin remove user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQzODUxMX0.CULG_WJ1M90J9sdVFoaiYpvXOaeWckVw7XoszrZTmZI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtUser/rmv/username2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtUser",
+						"rmv",
+						"username2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin remove user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/rmv/username7",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"rmv",
+								"username7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c-+rCZ/eF7fQfLa2ypRu+Rg1+t8I0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:53:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "user removed"
+				},
+				{
+					"name": "Admin remove user, user doesnt exist",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtUser/rmv/username2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtUser",
+								"rmv",
+								"username2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1-tlifxqsNyCzxIJnRwtQKuZToQQw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:55:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "0"
+				}
+			]
+		},
+		{
+			"name": "User search own data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lNCIsImlhdCI6MTU5MzQzODk5Nn0.wlld6ug9ZIcS7zQBhYkFSeF4Llg84GW09HQ1_m8vMVc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjQ4MDAzMn0.5h43zemLqYkjR5BpA7nHVRsrQRsr-aa29ePjpiPM9oM",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/user/search/username4",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"search",
+						"username4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User search own data, wrong user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjQ4MDAzMn0.5h43zemLqYkjR5BpA7nHVRsrQRsr-aa29ePjpiPM9oM",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/user/search/username4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"search",
+								"username4"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-l0PV/7+3Rm18VUrWeMvBUcD/dP0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:54:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "You are not allowed to do this operation"
+				},
+				{
+					"name": "User search own data, OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjQ4MDAzMn0.5h43zemLqYkjR5BpA7nHVRsrQRsr-aa29ePjpiPM9oM",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/user/search/username4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"search",
+								"username4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "146"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"92-1OZ0wkXrcoeoQm6HcBvVtUFijX8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:57:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"username4\",\n    \"name\": \"name4\",\n    \"email\": \"email4@gmail.com\",\n    \"mobile\": \"1234567894\",\n    \"address\": \"address4\",\n    \"passwordHash\": \"a3SDsdf48\",\n    \"admin\": 1\n}"
+				},
+				{
+					"name": "User search own data, not allowed to check other user data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjQ4MDAzMn0.5h43zemLqYkjR5BpA7nHVRsrQRsr-aa29ePjpiPM9oM",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/user/search/username1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"search",
+								"username1"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "40"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"28-l0PV/7+3Rm18VUrWeMvBUcD/dP0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:56:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "You are not allowed to do this operation"
+				}
+			]
+		},
+		{
+			"name": "Admin/User Sign in",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"username3\",\"passwordHash\": \"a3SDsdf47\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/signin/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"signin",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin/User Sign in rejected",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"username1\",\"passwordHash\": \"a3SDsdf46\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/signin/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"signin",
+								""
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e-rLNS954LHEEL+kNUFi+s5vEu3/o\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:48:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Incorrect username or password"
+				},
+				{
+					"name": "Admin/User Sign in",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\": \"username3\",\"passwordHash\": \"a3SDsdf47\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/signin/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"signin",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"94-/3RBSbxq7n4Gt/aYxh/ZW4jBmJI\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:41:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMyIsImlhdCI6MTU5MzQzODA5Nn0.scIZ2Uqg2bDEolcP8yCnaMEt-cVG1__MyU6eh0xzg44\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Sign up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE4MzY5MjV9.AvXpeToPDiNk86Voyl2KquIsqUpzJ6bg-hbvPbNC_Z0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"username1\",\"name\":\"name1\",\"email\":\"email1@gmail.com\",\"mobile\":\"1234567891\",\"address\":\"address1\",\"passwordHash\":\"a3SDsdf45\", \"admin\": \"1\"}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/user/signup",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Sign up from user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE4MzY5MjV9.AvXpeToPDiNk86Voyl2KquIsqUpzJ6bg-hbvPbNC_Z0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"username3\",\"name\":\"name3\",\"email\":\"email3@gmail.com\",\"mobile\":\"1234567893\",\"address\":\"address3\",\"passwordHash\":\"a3SDsdf47\"}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/user/signup",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-oMaxwMnw8TVsJxLbLw6SD3kaf+I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:38:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"username3\",\n    \"name\": \"name3\",\n    \"email\": \"email3@gmail.com\",\n    \"mobile\": \"1234567893\",\n    \"address\": \"address3\",\n    \"passwordHash\": \"a3SDsdf47\"\n}"
+				},
+				{
+					"name": "User Sign up from admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJqYWNraWUiLCJpYXQiOjE1OTE4MzY5MjV9.AvXpeToPDiNk86Voyl2KquIsqUpzJ6bg-hbvPbNC_Z0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"username1\",\"name\":\"name1\",\"email\":\"email1@gmail.com\",\"mobile\":\"1234567891\",\"address\":\"address1\",\"passwordHash\":\"a3SDsdf45\", \"admin\": \"1\"}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/user/signup",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"94-jO5akJq7cKmKvxowp/blQ1Cfywo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 13:44:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"username1\",\n    \"name\": \"name1\",\n    \"email\": \"email1@gmail.com\",\n    \"mobile\": \"1234567891\",\n    \"address\": \"address1\",\n    \"passwordHash\": \"a3SDsdf45\",\n    \"admin\": \"1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin add finalOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQ0ODQ0N30.LmbMZDHWNG3Zuh-4AP_j19dAB2Mp5BQRNc5q6im9gQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"platosData\":{\"platoTitle1\": \"cazon\",\"platoTitle2\": \"platano\"},\"orderData\":{\"totalPrice\": \"5727\", \"payType\": \"efectivo\", \"username\" : \"username4\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtOrder/addOrder",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtOrder",
+						"addOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin add finalOrder, OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"platosData\":{\"platoTitle1\": \"cazon\",\"platoTitle2\": \"platano\"},\"orderData\":{\"totalPrice\": \"5727\", \"payType\": \"efectivo\", \"username\" : \"username4\"}}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/addOrder",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"addOrder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "78"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4e-DtdItQW8fvVdudu/rRA8dZ2XT7A\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 16:41:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderId\": 12,\n    \"totalPrice\": \"5727\",\n    \"payType\": \"efectivo\",\n    \"username\": \"username4\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin update finalOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQ0ODQ0N30.LmbMZDHWNG3Zuh-4AP_j19dAB2Mp5BQRNc5q6im9gQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"status\": \"PREPARANDO\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtOrder/updtOrder/14",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtOrder",
+						"updtOrder",
+						"14"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin update finalOrder",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"status\": \"PREPARANDO\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/updtOrder/14",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"updtOrder",
+								"14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-6HMUPhDu06K0sdwzl5RRAqkm8Fo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 16:46:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"orderStatus\": \"PREPARANDO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Admin search finalOrder",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQ0ODQ0N30.LmbMZDHWNG3Zuh-4AP_j19dAB2Mp5BQRNc5q6im9gQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtOrder/searchOrder",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtOrder",
+						"searchOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin search finalOrder, no OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/searchOrder",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"searchOrder"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "53"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"35-70eTWPo0aNgBCG47EKs824Dr6Fc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:06:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "You must be admin and login to perform this operation"
+				},
+				{
+					"name": "Admin search finalOrder, OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/searchOrder",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"searchOrder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3571"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"df3-j3NnaQh4B1h6Xf3EPcCCyHD9g0Y\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:07:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        {\n            \"orderId\": 1,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:26:00.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username4\",\n            \"address\": \"address4\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 2,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:29:37.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username4\",\n            \"address\": \"address4\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 3,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:34:50.000Z\",\n            \"paytype\": \"5\",\n            \"totalPrice\": null,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": null\n        },\n        {\n            \"orderId\": 4,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:35:20.000Z\",\n            \"paytype\": \"5\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 5,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:36:02.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 6,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:36:43.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 7,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:37:01.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 8,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:37:29.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 9,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:37:41.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 10,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:38:37.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username4\",\n            \"address\": \"address4\",\n            \"platos\": \"cazon,platano\"\n        }\n    ],\n    [\n        {\n            \"orderId\": 1,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:26:00.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username4\",\n            \"address\": \"address4\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 2,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:29:37.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username4\",\n            \"address\": \"address4\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 3,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:34:50.000Z\",\n            \"paytype\": \"5\",\n            \"totalPrice\": null,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": null\n        },\n        {\n            \"orderId\": 4,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:35:20.000Z\",\n            \"paytype\": \"5\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 5,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:36:02.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 6,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:36:43.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 7,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:37:01.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 8,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:37:29.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 9,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:37:41.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username1\",\n            \"address\": \"address1\",\n            \"platos\": \"cazon,platano\"\n        },\n        {\n            \"orderId\": 10,\n            \"status\": \"NUEVO\",\n            \"createdAt\": \"2020-06-29T16:38:37.000Z\",\n            \"paytype\": \"efectivo\",\n            \"totalPrice\": 2690780,\n            \"username\": \"username4\",\n            \"address\": \"address4\",\n            \"platos\": \"cazon,platano\"\n        }\n    ]\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin search finalOrder by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQ0ODQ0N30.LmbMZDHWNG3Zuh-4AP_j19dAB2Mp5BQRNc5q6im9gQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtOrder/searchOrder/10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtOrder",
+						"searchOrder",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin search finalOrder by id, OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/searchOrder/10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"searchOrder",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-inkC76jO44f6n6nCRVUYuxUyx+s\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:07:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderId\": 10,\n        \"status\": \"NUEVO\",\n        \"createdAt\": \"2020-06-29T16:38:37.000Z\",\n        \"paytype\": \"efectivo\",\n        \"totalPrice\": 2690780,\n        \"username\": \"username4\",\n        \"address\": \"address4\",\n        \"platos\": \"cazon,platano\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin search finalOrder detail by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQ0ODQ0N30.LmbMZDHWNG3Zuh-4AP_j19dAB2Mp5BQRNc5q6im9gQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtOrder/searchDetail/10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtOrder",
+						"searchDetail",
+						"10"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin search finalOrder by id, OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/searchOrder/10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"searchOrder",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b7-inkC76jO44f6n6nCRVUYuxUyx+s\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:07:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderId\": 10,\n        \"status\": \"NUEVO\",\n        \"createdAt\": \"2020-06-29T16:38:37.000Z\",\n        \"paytype\": \"efectivo\",\n        \"totalPrice\": 2690780,\n        \"username\": \"username4\",\n        \"address\": \"address4\",\n        \"platos\": \"cazon,platano\"\n    }\n]"
+				},
+				{
+					"name": "Admin search finalOrder detail by id, OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/searchDetail/10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"searchDetail",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ef-V8t3BbRj28V71wc5UC0BAsLZ03I\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 17:20:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"orderId\": 10,\n        \"status\": \"NUEVO\",\n        \"paytype\": \"efectivo\",\n        \"totalPrice\": 5,\n        \"username\": \"username4\",\n        \"name\": \"name4\",\n        \"email\": \"email4@gmail.com\",\n        \"mobile\": \"1234567894\",\n        \"address\": \"address4\",\n        \"passwordHash\": \"a3SDsdf48\",\n        \"admin\": 1,\n        \"platos\": \"cazon,platano\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Admin rmv finalOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MzQ0ODQ0N30.LmbMZDHWNG3Zuh-4AP_j19dAB2Mp5BQRNc5q6im9gQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/mgmtOrder/rmvOrder/11",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"mgmtOrder",
+						"rmvOrder",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Admin rmv finalOrder",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/rmvOrder/11",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"rmvOrder",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "13"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d-AhH4cU4HGJMYt62ZfLGUGHb8RMw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 16:58:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "order removed"
+				},
+				{
+					"name": "Admin rmv finalOrder, No OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMSIsImlhdCI6MTU5MjA2NDk4Nn0.puXR5cPXTWyKbvwwrQW-osOg-KQPTxjZGdzzRIm6FQo",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3000/mgmtOrder/rmvOrder/104",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"mgmtOrder",
+								"rmvOrder",
+								"104"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1-tlifxqsNyCzxIJnRwtQKuZToQQw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Jun 2020 16:47:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "0"
+				}
+			]
+		},
+		{
+			"name": "User add finalOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMyIsImlhdCI6MTU5MzQ0ODc0N30.WhSgbmj0ZD7oFih1dXER8Zjr-o21Tw3-s_JwrlXuapE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXJuYW1lMyIsImlhdCI6MTU5MjQ4MDc1NH0.dFrkKMc-aME7pjTaqdfQ7Dcm3n35hL66dlTz1CJchg4",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"platosData\":{\"platoTitle1\": \"cazon\",\"platoTitle2\": \"platano\"},\"orderData\":{\"totalPrice\": 4564, \"payType\": \"efectivo\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:3000/user/addOrder",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"addOrder"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
